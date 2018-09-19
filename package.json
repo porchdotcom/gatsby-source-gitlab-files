@@ -1,6 +1,6 @@
 {
   "name": "@porch/gatsby-source-gitlab-files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gatsby source plugin for files in a Gitlab repository",
   "main": "index.js",
   "scripts": {
