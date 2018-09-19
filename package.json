@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-source-gitlab-files",
+  "version": "0.0.1",
+  "description": "Gatsby source plugin for files in a Gitlab repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/porchdotcom/gatsby-source-gitlab-files"
+  },
+  "author": "Jason Nutter <jasonn@porch.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/porchdotcom/gatsby-source-gitlab-files/issues"
+  },
+  "homepage": "https://github.com/porchdotcom/gatsby-source-gitlab-files#README",
+  "dependencies": {
+    "gatsby-node-helpers": "^0.3.0",
+    "node-dir": "^0.1.17",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
