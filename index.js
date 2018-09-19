@@ -1,1 +1,1 @@
-exports.loadNodeContent = (node) => Promise.resolve(node.content)
+exports.loadNodeContent = node => Promise.resolve(node.content);
