@@ -35,7 +35,7 @@ exports.sourceNodes = async (
 
             const promises = relativeFilePaths.map(filePath =>
                 gitlabReq({
-                    url: `/api/v4/projects/707/repository/files/${encodeURIComponent(
+                    url: `/api/v4/projects/${projectId}/repository/files/${encodeURIComponent(
                         filePath
                     )}`,
                     qs: {
@@ -43,7 +43,7 @@ exports.sourceNodes = async (
                     }
                 }).then(({ content, ...file }) => // eslint-disable-line no-unused-vars
                     gitlabReq({
-                        url: `/api/v4/projects/707/repository/commits/${
+                        url: `/api/v4/projects/${projectId}/repository/commits/${
                             file.last_commit_id
                         }`
                     }).then(latestCommit => ({
