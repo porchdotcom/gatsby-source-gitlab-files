@@ -61,14 +61,16 @@ exports.sourceNodes = async (
                             contentDigest: file.content_sha256
                         }
                     }))
-                )
+                ).catch(() => null)
             );
 
             return Promise.all(promises);
         })
         .then(results => {
             results.forEach(file => {
-                createNode(file);
+                if (file) {
+                    createNode(file);
+                }
             });
         });
 };
